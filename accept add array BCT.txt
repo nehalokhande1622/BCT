@@ -1,0 +1,23 @@
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.0;
+
+contract StudentMarks {
+
+    uint[] public marks;     // array
+
+    // a. Accept marks in array
+    function addMark(uint _mark) public {
+        marks.push(_mark);
+    }
+
+    // b. Display all marks (array automatically returned)
+    function getMarks() public view returns(uint[] memory){
+        return marks;
+    }
+
+   function addTwo(uint a, uint b) public pure returns(uint){
+        return a + b;
+    }
+
+   
+}
